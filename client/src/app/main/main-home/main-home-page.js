@@ -25,7 +25,7 @@ class MainHomePage extends React.Component {
         return (
             <div className="main-home-page row">
                 {this.renderMessage()}
-                {(config['mandatory-login']) || loginForm.loginFormShown ? this.renderLoginWidget() : null}
+                {(config['mandatory-login']) ? this.renderLoginWidget() : null}
             </div>
         );
     }

@@ -5,7 +5,8 @@
     .text-editor__editor {
         background-color: white;
         border: 1px solid $grey;
-        border-radius: 3px;
+        border-radius: 20px;
+        overflow: hidden;
 
         .ql-editor {
             min-height: 200px;
@@ -14,7 +15,7 @@
 
     &_focused {
         .text-editor__editor {
-            border-color: $primary-blue;
+            border-color: $secondary-blue;
         }
     }
 

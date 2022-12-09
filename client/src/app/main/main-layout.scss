@@ -14,17 +14,5 @@
 
     &--content {
         min-height: 453px;
-
-        @media screen and (min-width: 993px) and (max-width: 1032px) {
-            padding: 20px 0.45%;
-        }
-
-        @media screen and (max-width: 353px) {
-            padding: 20px 10px;
-        }
-
-        @media screen and (max-width: 333px) {
-            padding: 20px 0;
-        }
     }
 }

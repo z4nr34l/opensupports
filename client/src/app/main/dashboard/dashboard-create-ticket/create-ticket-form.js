@@ -24,7 +24,7 @@ const DEFAULT_CREATE_TICKET_FORM_VALUE = {
 };
 
 class CreateTicketForm extends React.Component {
-    
+
     static propTypes = {
         userLogged: React.PropTypes.bool,
         isStaff: React.PropTypes.bool,
@@ -56,14 +56,14 @@ class CreateTicketForm extends React.Component {
                 <Header title={i18n('CREATE_TICKET')} description={i18n('CREATE_TICKET_DESCRIPTION')} />
                 <Form {...this.getFormProps()}>
                     {(!userLogged) ? this.renderEmailAndName() : null}
-                    <FormField label={i18n('TITLE')} name="title" validation="TITLE" required field="input" fieldProps={{size: 'large'}} />
+                    <FormField label={i18n('TITLE')} name="title" validation="TITLE" required field="input" fieldProps={{size: 'full'}} />
                     <div className="row">
                         {!(isDefaultDepartmentLocked*1) || isStaff ?
                             <FormField className="col-md-5" label={i18n('DEPARTMENT')} name="departmentIndex" field="select" decorator={DepartmentDropdown} fieldProps={{
                                 departments: SessionStore.getDepartments(),
                                 size: 'medium'
                             }} /> : null
-                        }    
+                        }
                         {!onlyOneSupportedLanguage ?
                             <FormField className="col-md-5" label={i18n('LANGUAGE')} name="language" field="select" decorator={LanguageSelector} fieldProps={{
                                 type: 'supported',
@@ -81,7 +81,7 @@ class CreateTicketForm extends React.Component {
                     <div className="create-ticket-form__container">
                         <div className={`create-ticket-form__buttons-container${allowAttachments ? "" : "-without-allow-attachments"}`}>
                             {allowAttachments ? this.renderFileUpload() : null}
-                            <SubmitButton type="secondary">{i18n('CREATE_TICKET')}</SubmitButton>
+                            <SubmitButton type="primary">{i18n('CREATE_TICKET')}</SubmitButton>
                         </div>
                         <div className="create-ticket-form__captcha-container">
                             {(!userLogged) ? this.renderCaptcha() : null}

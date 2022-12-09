@@ -65,7 +65,10 @@
     }
 
     &__cell {
-        padding: 10px 25px !important;
+        padding: 15px 25px !important;
+    }
+    &__cell.ticket-list__title {
+        padding: unset !important;
     }
 
     &__navigation {

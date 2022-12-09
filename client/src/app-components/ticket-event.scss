@@ -7,7 +7,7 @@
 
     &__connector {
         position: absolute;
-        background-color: $light-grey;
+        background-color: #d4d4d4;
         width: 3px;
         height: 100%;
         top: 38px;
@@ -24,7 +24,7 @@
         height: 42px;
         overflow: hidden;
         position: relative;
-        border: 2px solid $light-grey;
+        border: 2px solid #E7E7E7;
 
         &-img {
             position: absolute;
@@ -41,8 +41,14 @@
         border-radius: 5px;
         width: 42px;
         height: 42px;
-        padding-left: 8px;
-        padding-top: 4px;
+        position: relative;
+
+        & > span.fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__comment {
@@ -53,9 +59,8 @@
             right: 100%;
             border: solid transparent;
             position: absolute;
-            border-right-color: $light-grey;
+            border-right-color: #bfdbfe;
             border-width: 13px;
-            margin-top: 8px;
         }
 
         &-author {
@@ -63,7 +68,10 @@
             float: left;
             position: relative;
             padding: 12px;
-            color: $primary-black;
+            font-size: 1.6rem;
+            color: $black;
+            display: flex;
+            align-items: center;
         }
 
         &-badge-container {
@@ -71,22 +79,22 @@
         }
 
         &-badge {
-            font-size: 10.6px;
-            font-weight: bold;
-            color: $primary-blue;
-            background-color: $very-light-grey;
-            padding: 6px;
+            font-size: 1rem;
+            font-weight: 400;
+            color: $white;
+            background-color: $primary-blue;
+            padding: 5px 10px;
             width: 100px;
         }
 
         &-date {
             text-align: right;
-            border: 2px solid $light-grey;
+            border: 2px solid #bfdbfe;
             border-bottom: none;
             padding: 12px;
             font-size: 12.5px;
             font-family: helvetica;
-            background-color: $light-grey;
+            background-color: #bfdbfe;
 
         }
 
@@ -163,14 +171,20 @@
         .ticket-event__icon {
             background-color: white;
             color: $primary-black;
-            border: 3px solid $light-grey;
+            border: 3px solid #E7E7E7;
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            padding-left: 8px;
-            padding-top: 4px;
-            margin-left: 2px;
-            margin-top: -8px;
+            width: 42px;
+            height: 42px;
+            margin-left: -1px;
+            margin-top: -10px;
+            position: relative;
+
+            & > span.fa {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .ticket-event__circled {
@@ -180,7 +194,7 @@
         }
 
         .ticket-event__circled-author {
-            color: $secondary-blue;
+            color: $black;
         }
 
         .ticket-event__circled-indication {

@@ -41,6 +41,20 @@
 
     &__title {
         text-align: left;
+
+        & > div {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        & span.fa {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     &__department {
@@ -53,6 +67,11 @@
 
     &__date {
         text-align: right;
+    }
+    &__title-link {
+        padding: 15px 25px;
+        width: 100%;
+        text-align: left !important;
     }
 
     &__title-link:hover,

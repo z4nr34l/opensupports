@@ -6,7 +6,7 @@
     &_secondary,
     &_tertiary {
         border: solid transparent;
-        border-radius: 4px;
+        border-radius: 25px;
         color: white;
         height: 47px;
         text-transform: uppercase;
@@ -70,9 +70,8 @@
     &_medium {
         min-width: 70px;
         width: auto;
-        padding: 5px 15px;
-        height: 35px;
-        text-transform: none;
+        padding: 10px 25px;
+        text-transform: uppercase;
     }
 
     &_large {

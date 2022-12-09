@@ -308,8 +308,6 @@ class TicketViewer extends React.Component {
                             {this.renderTags()}
                         </div>
                     </div>
-                </div>
-                <div className="ticket-viewer__info">
                     <div className="ticket-viewer__info-container">
                         <div className="ticket-viewer__info-header">{i18n('OWNER')}</div>
                         <div className="ticket-viewer__info-value">

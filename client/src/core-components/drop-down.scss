@@ -8,7 +8,7 @@
     cursor: pointer;
 
     &__current-item {
-        background-color: $light-grey;
+        background-color: $white;
         border-radius: 4px 4px 0 0;
         color: $primary-black;
         padding: 6px;
@@ -19,7 +19,8 @@
 
         &:focus {
             outline: none;
-            background-color: $medium-grey;
+            background-color: $secondary-blue;
+            color: $white;
         }
     }
 
@@ -41,7 +42,7 @@
 
         .loading__icon {
             border-color: rgba(150, 150, 150, 0.2);
-            border-left-color:  $primary-red;
+            border-left-color: $primary-blue;
         }
     }
 

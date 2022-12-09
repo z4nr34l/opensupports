@@ -62,10 +62,12 @@
 
         &__menu {
             padding: 0;
-            background-color: $very-light-grey;
+            background-color: #F7F7F7;
             height: 100%;
             max-width: 300px;
             position: relative;
+            margin: 0 !important;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 
             .menu__list {
                 background-color: transparent;
