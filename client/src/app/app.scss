@@ -76,8 +76,11 @@
             .menu__header {
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
-                background-color: $secondary-blue;
-                text-align: right;
+                background: transparent;
+                color: $black;
+                font-size: 2rem;
+                font-weight: 600;
+                padding: 10px 25px;
             }
         }
     }

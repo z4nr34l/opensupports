@@ -14,7 +14,7 @@ $transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &__list-item {
-        padding: 8px;
+        padding: 10px 25px;
         transition: $transition;
 
         &_selected,
