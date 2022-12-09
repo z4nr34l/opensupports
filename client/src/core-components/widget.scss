@@ -2,27 +2,16 @@
 
 .widget {
     background-color: white;
-    border-radius: 4px;
     text-align: center;
     padding: 20px;
-    min-height: 361px;
+    width: 100%;
+    height: 100%;
 
     &--title {
         text-transform: uppercase;
         color: $primary-black;
-        font-size: 17px;
+        font-size: 2.5rem;
+        line-height: 1;
         margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 379px) {
-    .widget {
-        min-width: 324px;
-    }
-}
-@media screen and (max-width: 409px) {
-    .widget {
-        min-width: 313px;
-        margin-left: -11px;
     }
 }

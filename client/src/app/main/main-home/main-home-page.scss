@@ -1,4 +1,7 @@
 .main-home-page {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80") no-repeat center center scroll;
+    background-size: cover;
 
     &__center {
         display: flex;

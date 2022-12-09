@@ -2,6 +2,8 @@
 
 .table {
     margin-bottom: 0;
+    border-radius: 15px !important;
+    overflow: hidden;
 
     &__header {
         background-color: $primary-blue;
@@ -22,7 +24,9 @@
     }
 
     &__header-column {
-        font-weight: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding: 10px 25px !important;
 
         &:first-child {
             border-top-left-radius: 4px;

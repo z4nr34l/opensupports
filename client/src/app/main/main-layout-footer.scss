@@ -3,16 +3,18 @@
 .main-layout-footer {
     background-color: $primary-blue;
     text-align: center;
-    min-height: 32px;
+    min-height: 50px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
 
     &__powered,
     &__extra-links {
-        float: right;
         padding-right: 20px;
         color: white;
         display: inline-block;
-        padding-top: 6px;
     }
 
     &__extra-link,
@@ -23,7 +25,7 @@
         &:hover,
         &:focus {
             text-decoration: none;
-            color: black;
+            color: $white;
         }
     }
 

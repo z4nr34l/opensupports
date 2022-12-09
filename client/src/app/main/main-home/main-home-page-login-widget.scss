@@ -1,14 +1,17 @@
 .login-widget {
 
     &__container {
-        height: 361px;
-        width: 324px;
+        height: 100%;
+        width: 100%;
     }
 
     &__inputs {
         display: inline-block;
         margin: 0 auto 20px;
         text-align: left;
+        width: 100%;
+        padding: 0 25px;
+        font-size: 1.5rem;
     }
 
     &__forgot-password {
@@ -34,25 +37,12 @@
     margin: auto;
 }
 
-.main-home-page__widget {
-    min-height: 391px;
-}
-
 @media screen and (min-width: 379px) {
-    .login-widget__container {
-        min-width: 324px;
-    }
     .Widget {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 409px) {
-    .login-widget__container {
-        min-width: 313px;
     }
 }
 

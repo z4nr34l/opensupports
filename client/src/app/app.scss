@@ -1,148 +1,137 @@
 @import "../scss/vars";
 
 .application {
-    padding: $half-space;
+    font-family: 'Inter', sans-serif;
 
-    &_full-width {
-        padding: 0;
+    .main-layout {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
 
-        .main-layout {
-            width: 100%;
-            max-width: none;
+        &-header {
+            border-radius: 0;
+            display: flex;
+            align-items: center;
 
-            &-header {
-                border-radius: 0;
+            &__login-links {
 
-                &__login-links {
-
-                }
-
-                &__languages {
-
-                }
             }
 
-            &--content {
+            &__languages {
+
+            }
+        }
+
+        &--content {
+            position: relative;
+            flex: 1;
+            display: flex;
+        }
+
+        &-footer {
+            height: 40px;
+
+            &--powered {
+                padding-top: 9px;
+            }
+        }
+    }
+
+    .main-home-page {
+        .widget {
+            background-color: $white;
+        }
+    }
+
+    .ticket-list__number {
+        text-align: center;
+    }
+
+    .signup-widget {
+        background-color: $very-light-grey;
+    }
+
+    .dashboard {
+        width: 100%;
+
+        .widget {
+            background-color: transparent;
+        }
+
+        &__menu {
+            padding: 0;
+            background-color: $very-light-grey;
+            height: 100%;
+            max-width: 300px;
+            position: relative;
+
+            .menu__list {
+                background-color: transparent;
+                height: 100%;
                 position: relative;
             }
 
-            &-footer {
-                height: 40px;
-
-                &--powered {
-                    padding-top: 9px;
-                }
+            .menu__header {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                background-color: $secondary-blue;
+                text-align: right;
             }
+        }
+    }
+
+    &__widget {
+        background-color: $very-light-grey;
+    }
+
+    @media screen and (max-width: 467px) {
+
+        .input {
+            width: 250px;
+        }
+    }
+
+    &.application_mandatory-login {
+
+        .main-layout {
+            background-color: white;
+            min-height: 100vh;
         }
 
         .main-home-page {
-            margin: 0 auto;
 
-            .widget {
-                background-color: $very-light-grey;
-            }
-        }
-
-        .ticket-list__number {
-            text-align: center;
-        }
-
-        .signup-widget {
-            background-color: $very-light-grey;
-        }
-        
-        .dashboard {
-
-            .widget {
-                background-color: transparent;
-            }
-
-            &__menu {
-                margin-left: -5px;
-                margin-top: -20px;
-                padding: 0;
-                background-color: $very-light-grey;
+            &__login-widget {
+                position: relative;
                 height: 100%;
-                position: absolute;
-
-                .menu__list {
-                    background-color: transparent;
-                    height: 100%;
-                    position: relative;
-                }
-
-                .menu__header {
-                    border-top-left-radius: 0;
-                    border-top-right-radius: 0;
-                    background-color: $secondary-blue;
-                    text-align: right;
-                }
             }
 
-            &__content {
-                margin-top: -10px;
+            &__portal-wrapper {
+                padding-left: 15px;
+                padding-right: 15px;
             }
 
             @media screen and (max-width: 992px) {
+                .main-home-page {
 
-                .dashboard__menu {
-                    position: static;
-                }
-            }
-        }
-
-        &__widget {
-            background-color: $very-light-grey;
-        }
-
-        @media screen and (max-width: 467px) {
-
-            .input {
-                width: 250px;
-            }
-        }
-
-        &.application_mandatory-login {
-
-            .main-layout {
-                background-color: white;
-            }
-
-            .main-home-page {
-
-                &__login-widget {
-                    position: absolute;
-                }
-
-                &__portal-wrapper {
-                    margin-left: 360px;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-
-                @media screen and (max-width: 992px) {
-                    .main-home-page {
-
-                        &__login-widget,
-                        &__portal-wrapper {
-                            float: none;
-                            width: initial;
-                            margin-left: 0;
-                            position: static;
-                        }
+                    &__login-widget,
+                    &__portal-wrapper {
+                        float: none;
+                        width: initial;
+                        margin-left: 0;
+                        position: static;
                     }
                 }
             }
         }
+    }
 
-        @media screen and (max-width: 379px) {
+    @media screen and (max-width: 379px) {
+        .main-home-page {
 
-            .main-home-page {
-
-                .widget {
-                    min-width: 313px !important;
-                    width: initial !important;
-                }
+            .widget {
+                width: 100%;
             }
         }
     }
@@ -153,8 +142,7 @@
             .main-home-page {
 
                 .widget {
-                    min-width: initial;
-                    width: 283px;
+                    width: 100%;
                 }
             }
         }

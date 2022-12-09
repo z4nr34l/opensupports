@@ -55,10 +55,11 @@ $transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .menu__list-item {
-            background-color: white;
+            background-color: transparent;
             cursor: pointer;
             display: inline-block;
             padding: 8px;
+            font-size: 1.6rem;
 
             &:first-child {
                 border-top-left-radius: 4px;
@@ -76,12 +77,12 @@ $transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .menu__list-item_selected {
-            background-color: $grey;
-            color: $primary-blue;
+            background-color: transparent;
+            color: $black;
         }
 
         .menu__list-item:hover {
-            color: $primary-blue;
+            color: $secondary-blue;
         }
     }
 
