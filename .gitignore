@@ -10,3 +10,4 @@ server/.fakemail
 server/apidoc
 dist/
 .env
+**/*.zip
