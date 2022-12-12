@@ -11,3 +11,5 @@ server/apidoc
 dist/
 .env
 **/*.zip
+api/
+server/files2
